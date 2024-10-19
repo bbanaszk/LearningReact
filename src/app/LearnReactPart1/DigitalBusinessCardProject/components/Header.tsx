@@ -1,11 +1,18 @@
 import React from 'react';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import headshot from '../headshot.png';
 
 export default function Header() {
-    return(
+    return (
         <div>
-            <Image className="header--image" src={headshot} alt={"Borys's Headshot"}/>
+            <Image
+                className="header--image"
+                src={headshot}
+                alt={"Borys's Headshot"}
+                style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                }} />
         </div>
-    )
+    );
 }

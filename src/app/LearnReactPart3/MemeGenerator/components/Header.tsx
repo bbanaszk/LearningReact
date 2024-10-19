@@ -1,18 +1,26 @@
 import React from 'react';
-import Image from "next/legacy/image";
+import Image from "next/image";
 import meme from '/public/images/troll-face.png';
 import '../styles.css';
 
 export default function Header() {
-    return(
+    return (
         <nav className='nav--header'>
             <div className='nav--contents'>
-                <Image className='nav--contents-img' src={meme} alt="troll face"/>
+                <Image
+                    className='nav--contents-img'
+                    src={meme}
+                    alt="troll face"
+                    style={{
+                        maxWidth: "100%",
+                    }}
+                    priority
+                />
                 <h1>Meme Generator</h1>
             </div>
             <div className='nav--projectname'>
                 <h1>React Course - Project 3</h1>
             </div>
         </nav>
-    )
+    );
 }

@@ -1,17 +1,33 @@
 import React from "react";
-import Image from "next/legacy/image";
+import Image from "next/image";
 import star from "/public/images/star.png"
 import '../styles.css'
 export default function Card(props: any) {
     const banner = props.openSpots == 0 ? "SOLD OUT" : props.location === "Online" ? "ONLINE" : ""
-    return(
+    return (
         <div className="card-div">
             <div className="image-container">
-                <Image className="card--image" src={props.coverImg} alt={props.description} style={{ marginBottom: 0 }}/>
+                <Image
+                    className="card--image"
+                    src={props.coverImg}
+                    alt={props.description}
+                    style={{
+                        marginBottom: 0,
+                        maxWidth: "100%",
+                        height: "auto"
+                    }} />
                 {banner !== "" && <div className="badge">{banner}</div>}
             </div>
             <div className="card-star-div">
-                <Image className="card--star" src={star} alt="star rating" style={{ marginTop: 0 }}/>
+                <Image
+                    className="card--star"
+                    src={star}
+                    alt="star rating"
+                    style={{
+                        marginTop: 0,
+                        maxWidth: "100%",
+                        height: "auto"
+                    }} />
                 <h6>{props.stats.rating.toFixed(1)}</h6>
                 <h5>({props.stats.reviewCount})</h5>
                 <span>&#8226;</span>
@@ -25,5 +41,5 @@ export default function Card(props: any) {
                 </div>
             </div>
         </div>
-    )
+    );
 }

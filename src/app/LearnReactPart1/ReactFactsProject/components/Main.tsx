@@ -1,9 +1,9 @@
 import React from 'react';
 import logo from "../react2.png";
-import Image from "next/legacy/image";
+import Image from "next/image";
 
 export default function Main() {
-    return(
+    return (
         <main>
             <h1 className='main--title'>Fun facts about React</h1>
             <ul className='main--facts'>
@@ -13,7 +13,14 @@ export default function Main() {
                 <li>Is maintained by Facebook</li>
                 <li>Powers thousands of enterprise apps, including mobile apps</li>
             </ul>
-            <Image src={logo} alt='react logo' className='main--icon'/>
+            <Image
+                src={logo}
+                alt='react logo'
+                className='main--icon'
+                style={{
+                    maxWidth: "100%",
+                    height: "auto"
+                }} />
         </main>
-    )
+    );
 }

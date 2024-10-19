@@ -1,13 +1,20 @@
 import React from "react";
 import Pin from '@mui/icons-material/Place';
 import '../styles.css'
-import Image from "next/legacy/image";
+import Image from "next/image";
 export default function Card(props: any) {
     return (
         <div className='card--body'>
             <div className="card--layout">
                 <div className="card--image-container">
-                    <Image className="card--image" src={props.imageUrl} alt={props.title}/>
+                    <Image
+                        className="card--image"
+                        src={props.imageUrl}
+                        alt={props.title}
+                        style={{
+                            maxWidth: "100%",
+                            height: "auto"
+                        }} />
                 </div>
                 <div className="card--content">
                     <div className="card--maplink">
@@ -26,6 +33,5 @@ export default function Card(props: any) {
             </div>
             <hr />
         </div>
-
-    )
+    );
 }
