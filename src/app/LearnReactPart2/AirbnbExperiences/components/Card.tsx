@@ -11,11 +11,7 @@ export default function Card(props: any) {
                     className="card--image"
                     src={props.coverImg}
                     alt={props.description}
-                    style={{
-                        marginBottom: 0,
-                        maxWidth: "100%",
-                        height: "auto"
-                    }} />
+                     />
                 {banner !== "" && <div className="badge">{banner}</div>}
             </div>
             <div className="card-star-div">

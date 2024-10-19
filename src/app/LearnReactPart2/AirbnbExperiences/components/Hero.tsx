@@ -9,10 +9,7 @@ export default function Hero() {
                 className="hero-grid"
                 src={photogrid}
                 alt="photogrid"
-                style={{
-                    maxWidth: "100%",
-                    height: "auto"
-                }} />
+                />
             <h1>Online Experiences</h1>
             <h5>Join unique interactive activities led by one-of-a-kind hosts-all without leaving home.</h5>
         </div>

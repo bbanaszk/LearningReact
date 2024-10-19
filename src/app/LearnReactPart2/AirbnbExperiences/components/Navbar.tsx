@@ -9,10 +9,7 @@ export default function Navbar() {
                 className="nav--logo"
                 src={logo}
                 alt="Airbnb logo"
-                style={{
-                    maxWidth: "100%",
-                    height: "auto"
-                }} />
+                />
         </nav>
     );
 }

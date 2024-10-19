@@ -11,10 +11,7 @@ export default function Card(props: any) {
                         className="card--image"
                         src={props.imageUrl}
                         alt={props.title}
-                        style={{
-                            maxWidth: "100%",
-                            height: "auto"
-                        }} />
+                         />
                 </div>
                 <div className="card--content">
                     <div className="card--maplink">
