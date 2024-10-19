@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import star from "/public/images/star.png"
 import '../styles.css'
 export default function Card(props: any) {

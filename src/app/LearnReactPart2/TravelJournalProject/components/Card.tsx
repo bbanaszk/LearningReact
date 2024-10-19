@@ -1,7 +1,7 @@
 import React from "react";
 import Pin from '@mui/icons-material/Place';
 import '../styles.css'
-import Image from 'next/image';
+import Image from "next/legacy/image";
 export default function Card(props: any) {
     return (
         <div className='card--body'>

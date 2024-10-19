@@ -1,5 +1,5 @@
 import React from 'react';
-import Image from 'next/image';
+import Image from "next/legacy/image";
 import meme from '/public/images/troll-face.png';
 import '../styles.css';
 

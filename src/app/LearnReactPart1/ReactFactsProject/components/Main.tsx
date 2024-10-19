@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from "../react2.png";
-import Image from "next/image";
+import Image from "next/legacy/image";
 
 export default function Main() {
     return(

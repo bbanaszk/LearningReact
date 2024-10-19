@@ -1,5 +1,5 @@
 import React from "react";
-import Image from "next/image";
+import Image from "next/legacy/image";
 import photogrid from "/public/images/photo-grid.png";
 import '../styles.css'
 export default function Hero() {
