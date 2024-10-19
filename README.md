@@ -14,7 +14,14 @@ pnpm dev
 bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Please do not open with http://localhost:3000 as this repo contains multiple projects and each has a subdirectory. Below is the correct link for each project:
+
+ - [http://localhost:3000/LearnReactPart1/ReactFactsProject](http://localhost:3000/LearnReactPart1/ReactFactsProject)  
+ - [http://localhost:3000/LearnReactPart1/DigitalBusinessCardProject](http://localhost:3000/LearnReactPart1/DigitalBusinessCardProject)  
+ - [http://localhost:3000/LearnReactPart2/AirbnbExperiences](http://localhost:3000/LearnReactPart2/AirbnbExperiences)  
+ - [http://localhost:3000/LearnReactPart2/Cats](http://localhost:3000/LearnReactPart2/Cats)  
+ - [http://localhost:3000/LearnReactPart2/TravelJournalProject](http://localhost:3000/LearnReactPart2/TravelJournalProject)  
+ - [http://localhost:3000/LearnReactPart3/MemeGenerator](http://localhost:3000/LearnReactPart3/MemeGenerator)  
 
 You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
 
