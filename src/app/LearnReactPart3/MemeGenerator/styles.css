@@ -97,11 +97,15 @@ body {
 }
 
 .meme-image {
-    display: flex;
-    height: 268px;
-    width: 477px;
+    display: block;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+    /*height: 268px;*/
+    /*width: 477px;*/
+    max-height: 300px;
+    max-width: 477px;
     margin-left: auto;
     margin-right: auto;
-    margin-top: 30px;
-    border-radius: 2px;
+    /*margin-top: 250px;*/
+    /*border-radius: 2px;*/
 }
